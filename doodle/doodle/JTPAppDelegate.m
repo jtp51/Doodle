@@ -24,7 +24,6 @@
     
     [tabBarController setViewControllers:viewControllers];
     [[self window] setRootViewController:tabBarController];
-
     [[self window] makeKeyAndVisible];
     return YES;
 }

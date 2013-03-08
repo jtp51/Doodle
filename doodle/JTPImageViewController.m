@@ -20,7 +20,7 @@
     if(self)
     {
         UITabBarItem *tbi = [self tabBarItem];
-        [tbi setTitle:@"Data"];
+        [tbi setTitle:@"Image"];
     }
     return self;
 }
@@ -33,6 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSLog(@"Loaded JTPImageViewController");
+    
 	[[self view] setBackgroundColor:[UIColor whiteColor]];
 }
 

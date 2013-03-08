@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JTPAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JTPAppDelegate : NSObject <UIApplicationDelegate>{
+    
+}
 
-@property (strong, nonatomic) UIWindow *window;
+@property (retain, nonatomic) IBOutlet UIWindow *window;
 
 @end

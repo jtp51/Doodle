@@ -33,6 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSLog(@"Loaded JTPViewController");
+    
 	[[self view] setBackgroundColor:[UIColor orangeColor]];
 }
 
