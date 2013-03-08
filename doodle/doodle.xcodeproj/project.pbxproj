@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F09689C16EA968700D03478 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F09689B16EA968700D03478 /* MainWindow.xib */; };
+		5F0968CD16EAAEA100D03478 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0968CC16EAAEA100D03478 /* MainWindow.xib */; };
 		5F96E87A16EA812A00FCE68E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F96E87916EA812A00FCE68E /* UIKit.framework */; };
 		5F96E87C16EA812A00FCE68E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F96E87B16EA812A00FCE68E /* Foundation.framework */; };
 		5F96E87E16EA812A00FCE68E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F96E87D16EA812A00FCE68E /* CoreGraphics.framework */; };
@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F09689B16EA968700D03478 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		5F0968CC16EAAEA100D03478 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		5F96E87616EA812A00FCE68E /* doodle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doodle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F96E87916EA812A00FCE68E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5F96E87B16EA812A00FCE68E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +86,7 @@
 		5F96E87F16EA812A00FCE68E /* doodle */ = {
 			isa = PBXGroup;
 			children = (
+				5F0968CC16EAAEA100D03478 /* MainWindow.xib */,
 				5F96E89916EA864000FCE68E /* JTPImageViewController.h */,
 				5F96E89A16EA864000FCE68E /* JTPImageViewController.m */,
 				5F96E88816EA812A00FCE68E /* JTPAppDelegate.h */,
@@ -93,7 +94,6 @@
 				5F96E88016EA812A00FCE68E /* Supporting Files */,
 				5F96E89616EA85FE00FCE68E /* JTPViewController.h */,
 				5F96E89716EA85FE00FCE68E /* JTPViewController.m */,
-				5F09689B16EA968700D03478 /* MainWindow.xib */,
 			);
 			path = doodle;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 				5F96E88C16EA812A00FCE68E /* Default.png in Resources */,
 				5F96E88E16EA812A00FCE68E /* Default@2x.png in Resources */,
 				5F96E89016EA812A00FCE68E /* Default-568h@2x.png in Resources */,
-				5F09689C16EA968700D03478 /* MainWindow.xib in Resources */,
+				5F0968CD16EAAEA100D03478 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
