@@ -21,6 +21,9 @@
     {
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Image"];
+        
+        UIImage *img = [UIImage imageNamed:@"Hypno.png"];
+        [tbi setImage:img];
     }
     return self;
 }
@@ -35,8 +38,6 @@
     [super viewDidLoad];
     
     NSLog(@"Loaded JTPImageViewController");
-    
-	[[self view] setBackgroundColor:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning

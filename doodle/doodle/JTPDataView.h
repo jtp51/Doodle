@@ -1,5 +1,5 @@
 //
-//  JTPAppDelegate.h
+//  JTPDataView.h
 //  doodle
 //
 //  Created by Todd Patrick on 3/8/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JTPAppDelegate : NSObject <UIApplicationDelegate>
-
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@interface JTPDataView : UIView
 
 @end

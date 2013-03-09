@@ -18,7 +18,7 @@
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
     UIViewController *jtpVC = [[JTPViewController alloc] init];
-    UIViewController *jtpImageVC = [[JTPViewController alloc] init];
+    UIViewController *jtpImageVC = [[JTPImageViewController alloc] init];
     
     NSArray *viewControllers = [NSArray arrayWithObjects:jtpVC, jtpImageVC, nil];
     

@@ -21,6 +21,9 @@
     {
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Data"];
+        
+        UIImage *img = [UIImage imageNamed:@"Time.png"];
+        [tbi setImage:img];
     }
     return self;
 }
@@ -35,8 +38,6 @@
     [super viewDidLoad];
     
     NSLog(@"Loaded JTPViewController");
-    
-	[[self view] setBackgroundColor:[UIColor orangeColor]];
 }
 
 - (void)didReceiveMemoryWarning
