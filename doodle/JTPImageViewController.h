@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface JTPImageViewController : UIViewController
+{
+    IBOutlet UILabel *headerLabel;
+}
+
+- (IBAction)refreshData:(id)sender;
 
 @end

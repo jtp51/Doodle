@@ -16,7 +16,7 @@
 
 - (id)init
 {
-    self = [super initWithNibName:nil bundle:nil];
+    self = [super initWithNibName:@"ImageView" bundle:nil];
     if(self)
     {
         UITabBarItem *tbi = [self tabBarItem];
@@ -44,6 +44,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)refreshData:(id)sender
+{
+    [headerLabel setText:@"Refresh"];
+    [headerLabel setTextColor:[UIColor redColor]];
 }
 
 @end

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JTPViewController : UIViewController
+@interface JTPDataViewController : UIViewController
+{
+    IBOutlet UILabel *headerLabel;
+}
+
+- (IBAction)refreshData:(id)sender;
 
 @end

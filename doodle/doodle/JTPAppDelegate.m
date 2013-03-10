@@ -7,7 +7,7 @@
 //
 
 #import "JTPAppDelegate.h"
-#import "JTPViewController.h"
+#import "JTPDataViewController.h"
 #import "JTPImageViewController.h"
 
 @implementation JTPAppDelegate
@@ -17,7 +17,7 @@
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    UIViewController *jtpVC = [[JTPViewController alloc] init];
+    UIViewController *jtpVC = [[JTPDataViewController alloc] init];
     UIViewController *jtpImageVC = [[JTPImageViewController alloc] init];
     
     NSArray *viewControllers = [NSArray arrayWithObjects:jtpVC, jtpImageVC, nil];
