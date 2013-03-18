@@ -9,6 +9,7 @@
 #import "JTPAppDelegate.h"
 #import "JTPDataViewController.h"
 #import "JTPImageViewController.h"
+#import "JTPTableViewController.h"
 
 @implementation JTPAppDelegate
 
@@ -17,10 +18,11 @@
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    UIViewController *jtpVC = [[JTPDataViewController alloc] init];
-    UIViewController *jtpImageVC = [[JTPImageViewController alloc] init];
+    JTPTableViewController *jtpTC = [[JTPTableViewController alloc] init];
+//    JTPDataViewController *jtpVC = [[JTPDataViewController alloc] init];
+    JTPImageViewController *jtpImageVC = [[JTPImageViewController alloc] init];
     
-    NSArray *viewControllers = [NSArray arrayWithObjects:jtpVC, jtpImageVC, nil];
+    NSArray *viewControllers = [NSArray arrayWithObjects:jtpTC, jtpImageVC, nil];
     
     [tabBarController setViewControllers:viewControllers];
     [[self window] setRootViewController:tabBarController];

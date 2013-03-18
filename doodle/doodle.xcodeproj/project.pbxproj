@@ -13,6 +13,9 @@
 		5F0968D416EAC6EF00D03478 /* DataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0968D316EAC6EF00D03478 /* DataView.xib */; };
 		5F0968D616EAC71600D03478 /* ImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0968D516EAC71600D03478 /* ImageView.xib */; };
 		5F106BD016EBEE8E003FFB1A /* JTPItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F106BCF16EBEE8E003FFB1A /* JTPItemsViewController.m */; };
+		5F547D9916F69DEF002995C5 /* JTPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F547D9816F69DEF002995C5 /* JTPTableViewController.m */; };
+		5F547D9C16F6A2AD002995C5 /* JTPTableDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F547D9B16F6A2AD002995C5 /* JTPTableDataStore.m */; };
+		5F547DA016F6A71E002995C5 /* JTPItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F547D9F16F6A71E002995C5 /* JTPItems.m */; };
 		5F96E87A16EA812A00FCE68E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F96E87916EA812A00FCE68E /* UIKit.framework */; };
 		5F96E87C16EA812A00FCE68E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F96E87B16EA812A00FCE68E /* Foundation.framework */; };
 		5F96E87E16EA812A00FCE68E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F96E87D16EA812A00FCE68E /* CoreGraphics.framework */; };
@@ -34,6 +37,12 @@
 		5F0968D516EAC71600D03478 /* ImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageView.xib; sourceTree = "<group>"; };
 		5F106BCE16EBEE8E003FFB1A /* JTPItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPItemsViewController.h; sourceTree = "<group>"; };
 		5F106BCF16EBEE8E003FFB1A /* JTPItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPItemsViewController.m; sourceTree = "<group>"; };
+		5F547D9716F69DEF002995C5 /* JTPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPTableViewController.h; sourceTree = "<group>"; };
+		5F547D9816F69DEF002995C5 /* JTPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPTableViewController.m; sourceTree = "<group>"; };
+		5F547D9A16F6A2AD002995C5 /* JTPTableDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPTableDataStore.h; sourceTree = "<group>"; };
+		5F547D9B16F6A2AD002995C5 /* JTPTableDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPTableDataStore.m; sourceTree = "<group>"; };
+		5F547D9E16F6A71E002995C5 /* JTPItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPItems.h; sourceTree = "<group>"; };
+		5F547D9F16F6A71E002995C5 /* JTPItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPItems.m; sourceTree = "<group>"; };
 		5F96E87616EA812A00FCE68E /* doodle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doodle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F96E87916EA812A00FCE68E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5F96E87B16EA812A00FCE68E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,8 +94,19 @@
 				5F96E89716EA85FE00FCE68E /* JTPDataViewController.m */,
 				5F106BCE16EBEE8E003FFB1A /* JTPItemsViewController.h */,
 				5F106BCF16EBEE8E003FFB1A /* JTPItemsViewController.m */,
+				5F547D9716F69DEF002995C5 /* JTPTableViewController.h */,
+				5F547D9816F69DEF002995C5 /* JTPTableViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5F547D9D16F6A6FC002995C5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5F547D9E16F6A71E002995C5 /* JTPItems.h */,
+				5F547D9F16F6A71E002995C5 /* JTPItems.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		5F96E86D16EA812A00FCE68E = {
@@ -119,6 +139,9 @@
 		5F96E87F16EA812A00FCE68E /* doodle */ = {
 			isa = PBXGroup;
 			children = (
+				5F547D9D16F6A6FC002995C5 /* Data */,
+				5F547D9A16F6A2AD002995C5 /* JTPTableDataStore.h */,
+				5F547D9B16F6A2AD002995C5 /* JTPTableDataStore.m */,
 				5F0968D216EAC6C100D03478 /* Views */,
 				5F0968CC16EAAEA100D03478 /* MainWindow.xib */,
 				5F106BCD16EBEDE0003FFB1A /* ViewControllers */,
@@ -221,6 +244,9 @@
 				5F96E89816EA85FE00FCE68E /* JTPDataViewController.m in Sources */,
 				5F96E89B16EA864000FCE68E /* JTPImageViewController.m in Sources */,
 				5F106BD016EBEE8E003FFB1A /* JTPItemsViewController.m in Sources */,
+				5F547D9916F69DEF002995C5 /* JTPTableViewController.m in Sources */,
+				5F547D9C16F6A2AD002995C5 /* JTPTableDataStore.m in Sources */,
+				5F547DA016F6A71E002995C5 /* JTPItems.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
